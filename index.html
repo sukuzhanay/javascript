@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>JavaScript Course</title>
+</head>
+<body>
+  <div class="title">
+    <h1>JavaScript Course</h1>
+    <h2>Desarrollo Web</h2>
+  </div>
+
+  <p>MANIPULACION DEL DOM con JavaScript</p><br>
+
+  <p id="examenes">Como seran los examenes, ya hable con Ana</p>
+  <!--Boton con evento Click que llama a la función saber y cambia -->
+  <button id = "bt" class= "botton" onclick="saber()" style="background: #f1c9c9">Quieres saber, click aqui ?</button>
+
+  <script title="saber()">
+    function saber() {
+      console.log(document.getElementById('examenes'));
+      document.getElementById('examenes').textContent = 'En papel 20 preguntas';
+      document.getElementsByClassName('botton')[0].textContent = 'Gracias por preguntar';}
+  </script>
+
+  <script title="event_listener">
+    document.getElementById('bt').addEventListener('click', function() {
+      alert("Boton Clickeado");
+    });
+  </script>
+</body>
+</html>
