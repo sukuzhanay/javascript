@@ -16,17 +16,8 @@
   <!--Boton con evento Click que llama a la función saber y cambia -->
   <button id = "bt" class= "botton" onclick="saber()" style="background: #f1c9c9">Quieres saber, click aqui ?</button>
 
-  <script title="saber()">
-    function saber() {
-      console.log(document.getElementById('examenes'));
-      document.getElementById('examenes').textContent = 'En papel 20 preguntas';
-      document.getElementsByClassName('botton')[0].textContent = 'Gracias por preguntar';}
-  </script>
+  <script src = "saber.js"></script>
+  <script src="data-types-var.js"></script>
 
-  <script title="event_listener">
-    document.getElementById('bt').addEventListener('click', function() {
-      alert("Boton Clickeado");
-    });
-  </script>
 </body>
 </html>
